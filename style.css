@@ -20,6 +20,7 @@ header {
 
 
 header h2{
+    border-radius: 20px;
     text-align: center;
     height: 1em;
     width: 10em;
@@ -29,8 +30,6 @@ header h2{
     margin-left: 2em;
     position: relative;
     background-color: #080A12;
-    
-    
 }
 
 header img{
@@ -44,6 +43,18 @@ body span img{
     position: relative;
     z-index: 1;
     object-fit: fill;
+}
+
+h3{
+    background-color: #080A12;
+    color: #F0F2FC;
+    height: 5em;
+    background-image: url(media/accueil/images/logo_JO.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 5em;
+    margin: 0em 10em;
+    border-radius: 20px;
 }
 
 
