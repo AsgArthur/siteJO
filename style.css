@@ -1,9 +1,7 @@
 header {
     background-color: #080A12;
-    position: fixed;
+    position: static;
     top: 0%;
-    
-
 }
 
 header img{
