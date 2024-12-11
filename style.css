@@ -40,12 +40,13 @@ header img{
     margin-left: 1em;
 }
 
-body span img{
+main > img{
     width: 100%;
     height: 100vh;
     position: relative;
     z-index: 1;
     object-fit: fill;
+    top: 0px;
 }
 
 h3{
