@@ -66,4 +66,93 @@ h3{
 }
 
 
+/*--------------------------------------------tableaux----------------------------------------------*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
 
+thead {
+    background-color: #080A12; 
+    color: white;
+    font-weight: bold;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody td, thead th {
+    border: 1px solid #ddd; 
+    padding: 10px; 
+}
+
+td {
+    text-align: center;
+}
+
+table caption {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2C2E7A;
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------footer----------------------------------------------*/
+.footer {
+    background-color: #151a30;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    text-align: left;
+}
+
+.logo-section img {
+    width: 120px;
+}
+
+.social-section h2,
+footer h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 14px; 
+}
+
+footer section {
+    flex: 1 1 220px;
+    min-width: 220px; 
+}
+
+.logo-section {
+    flex: 0 1 auto;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
