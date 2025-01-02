@@ -1,6 +1,12 @@
 body{
-    padding: 0;
+    background-color: #F0F2FC;
     margin: 0;
+}
+
+main section{
+    background-color: #2C2E7A;
+    padding: 1em;
+    margin: 2em 4em;
 }
 
 header {
@@ -47,6 +53,19 @@ main > img{
     z-index: 1;
     object-fit: fill;
     top: 0px;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #080A12;
+    color :#F0F2FC;
+    font-size: 3em;
+    margin: 0 43%;
+    height: 2em;
+    margin-top: 1em;
+    border-radius: 30px;
 }
 
 h3{
@@ -103,56 +122,49 @@ table caption {
 /*--------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------footer----------------------------------------------*/
-.footer {
+footer {
     background-color: #151a30;
     color: #fff;
-    padding: 20px 40px;
-    display: flex; 
-    justify-content: space-between; 
+    padding: 20px 5px;
+    display: flex;  
     flex-wrap: wrap; 
-    gap: 20px; 
     text-align: left;
 }
 
-.logo-section img {
-    width: 120px;
+footer>img {
+    width: 10em;
+    height: 11em;
 }
 
-.social-section h2,
-footer h2 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
 
-.social-icons {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    gap: 10px;
-}
-
-.social-icons img {
-    width: 30px;
-}
-
-.footer ul li {
+footer ul li {
     list-style: none;
 }
 
-.footer ul li a {
+footer ul li a {
     text-decoration: none; 
     color: white; 
     font-size: 14px; 
 }
 
-footer section {
-    flex: 1 1 220px;
-    min-width: 220px; 
+footer ul li img{
+    width: 2em;
+    margin: 0 5px;
 }
 
-.logo-section {
-    flex: 0 1 auto;
+#social-icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: center;
+    gap: 10px;
+    align-items: center; 
+}
+
+footer article{
+    margin: 0 3%;
+    padding-left: 3%;
+    border-left: solid 1px #F0F2FC;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
+
