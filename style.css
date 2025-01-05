@@ -3,6 +3,12 @@ body{
     margin: 0;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main section{
     background-color: #2C2E7A;
     padding: 1em;
@@ -46,13 +52,15 @@ header img{
     margin-left: 1em;
 }
 
-main > img{
+main img{
+    width: 50%;
+    border: solid 10px #2C2E7A;
+}
+
+main > img:first-of-type{
     width: 100%;
     height: 100%;
-    position: relative;
-    z-index: 1;
-    object-fit: fill;
-    top: 0px;
+    border: none;
 }
 
 h1{
@@ -64,6 +72,7 @@ h1{
     font-size: 3em;
     margin: 0 43%;
     height: 2em;
+    width: 20%;
     margin-top: 1em;
     border-radius: 30px;
 }
@@ -76,11 +85,12 @@ h3{
     background-color: #080A12;
     color: #F0F2FC;
     height: 5em;
+    width: 70%;
+    padding-left: 20px;
     background-image: url(media/accueil/images/logo_JO.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 5em;
-    margin: 0em 10em;
     border-radius: 20px;
 }
 
@@ -88,10 +98,14 @@ h3{
 /*--------------------------------------------tableaux----------------------------------------------*/
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-spacing: 2px;
     margin: 20px 0;
     font-size: 18px;
     text-align: left;
+}
+
+td{
+    background-color: #F0F2FC;
 }
 
 thead {
@@ -105,8 +119,8 @@ thead th {
 }
 
 tbody td, thead th {
-    border: 1px solid #ddd; 
     padding: 10px; 
+    text-align: center;
 }
 
 td {
@@ -131,7 +145,7 @@ footer {
     text-align: left;
 }
 
-footer>img {
+footer>img:first-of-type {
     width: 10em;
     height: 11em;
 }
