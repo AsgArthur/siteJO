@@ -833,11 +833,6 @@ main.epreuve {
   align-items: center;
 }
 
-.article1 > figure >img {
-  width: 450px;
-}
-
-
 .article2 figcaption{
   padding-top: 5%;
 }
@@ -957,9 +952,7 @@ main.epreuve {
     align-items: center;
 }
   
-.article1 > figure >img {
-    width: 450px;
-}
+
   
 .article2 figcaption{
     padding-top: 5%;
@@ -968,4 +961,58 @@ main.epreuve {
 
 .section3 article{
     border-radius: 40px;
+}
+
+main.sportif {
+    color: #F0F2FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "league Spartan";
+    font-size: 30px;
+}
+main.sportif article
+ {
+    background-color: #0156A5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    border-radius: 20px;
+}
+
+main.sportif h3{
+    width: 90%;
+}
+.compteoffi{
+    display: flex;
+    flex-direction: row;
+    width: 1297px;
+    align-items: center;
+}
+main.sportif section img {
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    main.sportif {
+        font-size: 20px; /* Réduction de la taille de police */
+    }
+    main.sportif h3 {
+        font-size: 18px; /* Taille du texte des titres réduite */
+        text-align: center; /* Centre les titres */
+    }
+    main.sportif article {
+        margin-top: 0.5em; /* Réduction des marges verticales */
+        padding: 10px; /* Ajout d'un padding pour le confort visuel */
+    }
+    .compteoffi {
+        flex-direction: column; /* Empile les éléments */
+        width: 100%; /* Prend toute la largeur disponible */
+        gap: 10px; /* Ajout d'un espacement entre les éléments */
+    }
+    iframe {
+        width: 100%; /* Vidéos adaptatives */
+        height: auto;
+        aspect-ratio: 16 / 9; /* Maintient le ratio des vidéos */
+    }
 }

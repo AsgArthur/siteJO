@@ -5,28 +5,47 @@
     <title>Accueil - JO</title>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
   </head>
   <body>
     <header>
       <nav>
-        <img src="../media/general/menu.png" alt="image_menu">
+        <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+        <div id="sideMenu" class="side-menu">
+          <img src="../media/general/logo_JO.png" alt="logo des JO">
+          <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+          <a href="../page accueil/index.html">Accueil</a>
+          <a href="../page discipline/index.html">Discipline</a>
+          <a href="../page epreuve/index.html">Épreuves</a>
+          <a href="../page sportif/index.html">Sportifs</a>
+        </div>
+        <img src="../media/general/menu.png" alt="Menu" class="open-btn" onclick="openMenu()">      
       </nav>
       <h2>Jeux Olympiques</h2>
+      <script src="../script.js"></script>
     </header>
-    <main>
+    <main class="sportif">
       <img src="../media/sportif/images/Header.png" alt="image header">
+
       <article>
         <h3>Léon Marchand : Une légende de la natation française</h3>
+        <p>
+          Une finale historique : Dans le 400 m 4 nages, Léon a battu le record du <br> monde détenu par Michael Phelps depuis 2008.
+        </p>
       </article>
-      <section>
+
+      
+      <section style="background-color: #0156A5;">
         <h3>Biographie</h3>
         <img src="../media/sportif/images/image 30.png" alt="img louis Marchand">
-        <p>Nom complet : Léon Marchand</p>
-        <p>Date de naissance : 17 mai 2002</p>
-        <p>Lieu de naissance : Toulouse, France</p>
-        <p>Âge : 22 ans lors des JO de Paris 2024</p>
-        <p>Club : Sun Devils Swim Club (Arizona State University, USA)</p>
-        <p>Entraîneur : Bob Bowman</p>
+        <p><strong>Nom complet :</strong> Léon Marchand</p>
+        <p><strong>Date de naissance :</strong> 17 mai 2002</p>
+        <p><strong>Lieu de naissance :</strong> Toulouse, France</p>
+        <p><strong>Âge :</strong> 22 ans lors des JO de Paris 2024</p>
+        <p><strong>Club :</strong> Sun Devils Swim Club (Arizona State University, USA)</p>
+        <p><strong>Entraîneur :</strong> Bob Bowman</p>
       </section>
       <article>
         <h3>Spécialités Sportives</h3>
@@ -35,7 +54,9 @@
           <li>200m papillon</li>
           <li>200m brasse</li>
           <li>nage libre</li>
-          </ul>
+        </ul>
+        <p>Avec une technique polyvalente et une endurance exceptionnelle,<br>
+          Léon excelle dans toutes les disciplines des 4 nages.</p>
       </article>
       <section>
         <h3>Léon Marchand Palmarès JO</h3>
@@ -73,13 +94,13 @@
         <ul>
           <li>Championnats du Monde 2022 a Budapest :
             <ul>
-              <li>200m 4 nages </li>
-              <li>400m 4 nages (reccord d'Europe)</li>
+              <li>🥇200m 4 nages </li>
+              <li>🥇400m 4 nages (reccord d'Europe)</li>
             </ul>
           </li>
           <li>championnats d'Europe 2021 :
             <ul>
-              <li>200m 4 nages</li>
+              <li>🥈200m 4 nages</li>
             </ul>
           </li>
           <li>Recordman mondial junior : 400m 4 nages</li>
@@ -92,6 +113,12 @@
           <li>Michael Phelps : "Ce qu'il a réalisé est tout simplement incroyable. Léon est l’avenir de la natation."</li>
           <li>Léon Marchand : "Nager ici, à Paris, devant ma famille et mon pays, restera le plus beau moment de ma vie."</li>
         </ul>
+      </article>
+      <article>
+        <h3>Réactions</h3>
+        <div class="compteoffi"><img src="../media/sportif/images/image_insta.png" alt="image insta">
+          <img src="../media/sportif/images/image_twiter.png" alt="image twitter"></div>
+        
       </article>
     </main>
   </body>
