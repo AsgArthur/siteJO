@@ -9,16 +9,26 @@
   <body>
     <header>
       <nav>
-        <img src="../media/general/menu.png" alt="image_menu">
+        <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+        <div id="sideMenu" class="side-menu">
+          <img src="../media/general/logo_JO.png" alt="logo des JO">
+          <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+          <a href="../page accueil/index.html">Accueil</a>
+          <a href="../page discipline/index.html">Discipline</a>
+          <a href="../page epreuve/index.html">Épreuves</a>
+          <a href="../page sportif/index.html">Sportifs</a>
+        </div>
+        <img src="../media/general/menu.png" alt="Menu" class="open-btn" onclick="openMenu()">      
       </nav>
       <h2>Jeux Olympiques</h2>
+      <script src="../script.js"></script>
     </header>
     <main class="accueil">
       <img src="../media/accueil/images/Background_Header.png" alt="">
       <h1>Accueil</h1>
       <h3>Éxperience & Émotions des jeux</h3>
       <img src="../media/accueil/images/Image_Article1.png" alt="image article n°1">
-      <section class="accueil">
+      <section class="accueil" style="background-color: #0156A5;">
         <article>
           <h4>Grands Moments</h4>
           <img src="../media/accueil/images/image 14.png" alt="image article 2">
@@ -36,7 +46,7 @@
           <p>Plongez dans l'univers des Jeux Paralympiques 2024. Paris 2024 met à l'honneur l'excellence et la diversité.</p>
         </article>
       </section>
-      <section class="accueil">
+      <section class="accueil" style="background-color: #0156A5;">
         <h4>Chiffres Clés</h4>
         <p>Explorez les chiffres qui font des JO 2024 un événement unique : nombre d’athlètes, spectateurs attendus, infrastructures mises en place, et bien plus.</p>
         <table>
@@ -80,7 +90,7 @@
       </section>
       <h3>Les coulisses des jeux</h3>
       <img src="../media/accueil/images/image 19.png" alt="image coulisse des jeux">
-      <section class="accueil">
+      <section class="accueil" style="background-color: #8C97E9;">
         <article>
           <h4>14 Catégories</h4>
           <img src="../media/accueil/images/image 18.png" alt="image catégories">
@@ -97,7 +107,7 @@
           <p>Consultez notre carte interactive pour localiser les sites des compétitions, les villages des athlètes, et les zones réservées aux spectateurs.</p>
         </article>
       </section>
-      <section class="accueil">
+      <section class="accueil" style="background-color: #8C97E9;">
         <h4>Tableau des Médaillés</h4>
         <table>
           <thead>
@@ -196,7 +206,7 @@
       </section>
       <h3>Les Coulisses des Jeux</h3>
       <img src="../media/accueil/images/image 24.png" alt="image coulisse jeux">
-      <section class="accueil">
+      <section class="accueil" style="background-color: #5567EB;">
         <article>
           <h4>Liste des Partenaires</h4>
           <img src="../media/accueil/images/image 25.png" alt="image liste partenaires">
@@ -207,7 +217,7 @@
           <img src="../media/accueil/images/image 27.png" alt="image liste partenaires">
           <p>Faites connaissance avec les hommes et les femmes qui œuvrent dans l’ombre pour orchestrer les Jeux Olympiques et Paralympiques 2024. Leur expertise et leur passion garantissent un événement exceptionnel.</p>
         </article>
-      </section class="accueil">
+      </section class="accueil" style="background-color: #5567EB;">
     </main>
     <footer>
       <img src="../media/accueil/images/LOGO After delay.png" alt="logo jeux Paralympiques" title="Jeux Paralympiques">
@@ -225,27 +235,27 @@
       <article>
         <p>Jeux Olympiques</p>
         <ul>
-          <li>accueil</li>
-          <li>Champions</li>
-          <li>Resultats</li>
-          <li>histoire</li>
+          <li><a href="">Accueil</a></li>
+          <li><a href="">Champions</a></li>
+          <li><a href="">Resultats</a></li>
+          <li><a href="">Histoire</a></li>
         </ul>
       </article>
       <article>
-        <P>rendez vous :</P>
+        <P>Rendez vous :</P>
         <ul>
-          <li>Olympics.com</li>
-          <li>Olympiques channel</li>
-          <li>La boutique Olympique</li>
-          <li>Musée Olympique</li>
+          <li><a href="">Olympics.com</a></li>
+          <li><a href="">Olympiques channel</a></li>
+          <li><a href="">La boutique Olympique</a></li>
+          <li><a href="">Musée Olympique</a></li>
         </ul>
       </article>
       <article>
-        <p>mentions légales</p>
+        <p>aMentions légales</p>
         <ul>
-          <li>politique de confidentialité</li>
-          <li>Conditions d'utilisations</li>
-          <li>Politique de cookies</li>
+          <li><a href="">Poitique de confidentialité</a></li>
+          <li><a href="">Conditions d'utilisations</a></li>
+          <li><a href="">Politique de cookies</a></li>
         </ul>
       </article>
     </footer>
