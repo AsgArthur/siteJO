@@ -1,70 +1,84 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Jeux Olympiques</title>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <img src="../media/general/menu.png" alt="Menu">
-      </nav>
-      <h2>Jeux Olympiques</h2>
-    </header>
+  <head>
+    <meta charset="utf-8">
+    <title>JOs - Natation</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+      
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+        <div id="sideMenu" class="side-menu">
+          <img src="../media/general/logo_JO.png" alt="logo des JO">
+          <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+          <a href="../page accueil/index.html">Accueil</a>
+          <a href="../page discipline/index.html">Discipline</a>
+          <a href="../page epreuve/index.html">Épreuves</a>
+          <a href="../page sportif/index.html">Sportifs</a>
+        </div>
+        <img src="../media/general/menu.png" alt="Menu" class="open-btn" onclick="openMenu()">      
+      </nav>
+      <h2>Jeux Olympiques</h2>
+      <script src="../script.js"></script>
+    </header>
 
-    <main>
-      <section class="introduction">
-        <img src="../media/discipline/images/header.jpg" alt="Natation Olympique">
-        <h1>Natation aux Jeux Olympiques</h1>
-      </section>
+   <main>
+      <img src="../media/discipline/images/header.png" alt="Natation Olympique" id="imageacceuil">
 
-      <section class="histoire de la natation en brrrrrr">
-        <h3>Brève histoire de la natation</h3>
-        <p>
-          Les premières traces de natation remontent à l’Antiquité. Des peintures retrouvées en Égypte, datant d’environ 2500 avant J.-C., montrent des 
-          nageurs utilisant des mouvements semblables à ceux que l’on connaît aujourd’hui.Au départ, la natation était surtout une compétence pratique.  Elle  
-          permettait  de  traverser  des  rivières, de pêcher ou encore de fuir en cas de danger. Dans la Grèce antique,  elle  était aussi liée à l’éducation  
-          physique, car savoir nager et être en bonne condition physique étaient essentiels pour un citoyen.
-          
-          Avec le temps,  la natation a évolué vers une activité de loisirs  et  de  compétition.  Dès le Moyen  Âge,  certains villages   organisaient  des  
-          courses  dans  les    rivières. Cependant, c’est au XIXe siècle que la natation a pris un tournant   sportif,  notamment   en   Angleterre,   où   
-          des piscines publiques ont commencé à voir le jour.
-        </p>
-        <figure>
-          <img src="../media/discipline/images/pictogramme-natation.png" alt="pictogramme-natation">
-          <figcaption>Pictogramme officiel des JOs de Natation 2024</figcaption>
-        </figure>
-
-        <p>
-          C’est  aussi  au  XIXe  siècle   que  les  différents   styles de  nage  se  sont  développés. Le crawl, par exemple, a été   inspiré   par  les  
-          techniques   observées   chez   les peuples indigènes d’Amérique du Sud et d’Australie. Ce style,   rapide   et   efficace,   est   devenu   l’un  
-          des  plus populaires dans les compétitions.
-        </p>
-        <figure>
-          <img src="../media/discipline/images/natation-peinture.png" alt="natation-peinture">
-          <figcaption>Le Nageur, 1877 Gustave Caillebotte Musée d'Orsay, Paris</figcaption>
-        </figure>
-
-        <p>
-          La  natation  a  fait  son  entrée  aux  Jeux  Olympiques modernes dès leur première édition en 1896 à Athènes. À l’époque, seules des  épreuves 
-          masculines étaient au programme.  Les  femmes n’ont été  admises qu’en 1912, lors  des  Jeux  de  Stockholm.  Depuis,  la  natation  est devenue 
-          l’un des sports les plus regardés aux JO.
-          Avec le temps, les techniques et les équipements ont beaucoup changé. Les combinaisons de nage, les lunettes et les piscines modernes ont permis des 
-          performances toujours plus impressionnantes. Aujourd’hui, la natation combine tradition et innovation, rassemblant des millions de pratiquants et de 
-          spectateurs à travers le monde.</p>
-  
-        </p>
-        <figure>
-          <img src="../media/discipline/images/natation-plongeoir.png " alt="natation-plongeoir">
-          <figcaption></figcaption>
-        </figure>
-      </section>
-
-      <section class="techniques-regles">
-        <h3>Techniques et Règles</h3>
-        <div class="techniques">
+      <h1>Natation</h1>
+<section class="discipline-histoire">
+  <h3>Brève histoire de la natation</h3>
+  <p>Les premières traces de natation remontent à l’Antiquité. Des peintures retrouvées en Égypte, datant d’environ 2500 avant J.-C., 
+            montrent des nageurs utilisant des mouvements semblables à ceux que l’on connaît aujourd’hui.</p>
+  <div class="discipline-bloc">
+    <p class="discipline-texte">
+        Au départ, la natation était surtout une compétence pratique. Elle permettait de traverser des rivières, de pêcher ou encore de fuir en cas de danger. 
+        Dans la Grèce antique, elle était aussi liée à l’éducation physique, car savoir nager et être en bonne condition physique étaient essentiels pour un 
+        citoyen. Avec le temps, la natation a évolué vers une activité de loisirs et de compétition. Dès le Moyen Âge, certains villages organisaient des 
+        courses dans les rivières. Cependant, c’est au XIXe siècle que la natation a pris un tournant sportif, notamment en Angleterre, où des piscines 
+        publiques ont commencé à voir le jour.
+    </p>
+    <figure class="discipline-image">
+      <img src="../media/discipline/images/pictogramme-natation.png" alt="pictogramme-natation">
+      <figcaption>Pictogramme officiel des JOs de Natation 2024</figcaption>
+    </figure>
+  </div>
+  <div class="discipline-bloc">
+    <p class="discipline-texte">
+        C’est aussi au XIXe siècle que les différents styles de nage se sont développés.Le crawl, par exemple, a été inspiré par les techniques 
+        observées chez les peuples indigènes d’Amérique du Sud et d’Australie. Ce style, rapide et efficace, est devenu l’un des plus populaires dans les 
+        compétitions.
+    </p>
+    <figure class="discipline-image">
+      <img src="../media/discipline/images/natation-peinture.png" alt="natation-peinture">
+      <figcaption>Le Nageur, 1877 Gustave Caillebotte Musée d'Orsay, Paris</figcaption>
+    </figure>
+  </div>
+  <div class="discipline-bloc">
+    <p class="discipline-texte">
+        La natation a fait son entrée aux Jeux Olympiques modernes dès leur première édition en 1896 à Athènes. À l’époque, seules des épreuves masculines 
+        étaient au programme. Les femmes n’ont été admises qu’en 1912, lors des Jeux de Stockholm. Depuis, la natation est devenue l’un des sports les plus 
+        regardés aux JO.Avec le temps, les techniques et les équipements ont beaucoup changé. Les combinaisons de nage, les lunettes et les piscines modernes 
+        ont permis des performances toujours plus impressionnantes. Aujourd’hui, la natation combine tradition et innovation, rassemblant des millions de 
+        pratiquants et de spectateurs à travers le monde.
+    </p>
+    <figure class="discipline-image">
+      <img src="../media/discipline/images/natation-plongeoir.png" alt="natation-plongeoir">
+      <figcaption></figcaption>
+    </figure>
+  </div>
+</section>
+<section class="discipline-techniques-regles">
+<h3>Techniques et Règles</h3>
+        <div class="discipline-techniques">
           <h4>Techniques</h4>
           <article>
             <figure>
@@ -72,8 +86,7 @@
               <figcaption>Athlète nageant dans la Seine, Paris.</figcaption>
             </figure>
             <h5>La nage libre</h5>
-            <p>En nage libre, les athlètes choisissent généralement le crawl, car c’est la nage la plus rapide. Tout se joue sur la fluidité des mouvements, 
-              une respiration bien rythmée et un battement de jambes puissant.</p>
+            <p>En nage libre, les athlètes choisissent généralement le crawl, car c’est la nage la plus rapide. Tout se joue sur la fluidité des mouvements, une respiration bien rythmée et un battement de jambes puissant.</p>
           </article>
           <article>
             <figure>
@@ -81,8 +94,7 @@
               <figcaption>Athlète s'entrainant au dos crawlé</figcaption>
             </figure>
             <h5>Le dos crawlé</h5>
-            <p>Nager sur le dos exige une parfaite coordination. Les nageurs doivent maintenir leur corps bien aligné et garder une cadence régulière pour 
-              éviter de dévier de leur trajectoire. Petite astuce : ils se repèrent souvent grâce au plafond des piscines pour ne pas heurter les lignes.</p>
+            <p>Nager sur le dos exige une parfaite coordination. Les nageurs doivent maintenir leur corps bien aligné et garder une cadence régulière pour éviter de dévier de leur trajectoire. Petite astuce : ils se repèrent souvent grâce au plafond des piscines pour ne pas heurter les lignes.</p>
           </article>
           <article>
             <figure>
@@ -90,8 +102,7 @@
               <figcaption>L’athlète Léon Marchand nageant la brasse, JOs 2024, Paris.</figcaption>
             </figure>
             <h5>La brasse</h5>
-            <p>La brasse est plus technique qu’elle n’en a l’air. Les bras et les jambes doivent bouger en symétrie, et la tête doit émerger de l’eau à chaque 
-              mouvement. Un détail crucial : le corps ne peut pas bouger de manière ondulatoire, sinon c’est la disqualification.</p>
+            <p>La brasse est plus technique qu’elle n’en a l’air. Les bras et les jambes doivent bouger en symétrie, et la tête doit émerger de l’eau à chaque mouvement. Un détail crucial : le corps ne peut pas bouger de manière ondulatoire, sinon c’est la disqualification.</p>
           </article>
           <article>
             <figure>
@@ -99,8 +110,7 @@
               <figcaption>L’atlhète Summer McIntosh nageant le papillon, JOs 2024, Paris.</figcaption>
             </figure>
             <h5>Le papillon</h5>
-            <p>Le papillon demande beaucoup de puissance. Les deux bras sortent de l’eau en même temps dans un mouvement circulaire, accompagnés par une 
-              ondulation du corps. Cette nage, exigeante physiquement, est souvent l’une des plus impressionnantes à regarder.</p>
+            <p>Le papillon demande beaucoup de puissance. Les deux bras sortent de l’eau en même temps dans un mouvement circulaire, accompagnés par une ondulation du corps. Cette nage, exigeante physiquement, est souvent l’une des plus impressionnantes à regarder.</p>
           </article>
           <article>
             <figure>
@@ -108,91 +118,103 @@
               <figcaption>Saut des athlètes dans La Seine, Paris JOs 2024</figcaption>
             </figure>
             <h5>Les virages et départs</h5>
-            <p>Les départs explosifs sont essentiels. Les nageurs plongent avec force pour maximiser leur vitesse. Aux virages, ils effectuent des roulades 
-              sous l’eau pour repartir en un éclair. Ces moments peuvent décider d’une victoire.</p>
+            <p>Les départs explosifs sont essentiels. Les nageurs plongent avec force pour maximiser leur vitesse. Aux virages, ils effectuent des roulades sous l’eau pour repartir en un éclair. Ces moments peuvent décider d’une victoire.</p>
           </article>
         </div>
-        <div class="regles">
-          <h4>Règles</h4>
-          <p>Les compétitions de natation aux Jeux Olympiques ne laissent aucune place à l’improvisation. Les règles sont strictes pour assurer l’équité et 
-            garantir la sécurité des athlètes.
-          <ul>
-            <li>Lors des épreuves, les nageurs commencent sur un plot de départ. Au signal sonore, ils plongent dans l’eau. Un faux départ, c’est-à-dire un 
-              plongeon avant le signal, entraîne une disqualification immédiate. La précision et la concentration sont donc cruciales.</li>
-            <li>Lors des épreuves, les nageurs doivent nager sous un style de nage prédefini. Un nageur qui ne respecte pas ces spécificités est immédiatement 
-              disqualifié.</li>
-            <li>Aux virages, la manière dont un nageur touche le mur est surveillée de près :
-              <ul>
-                <li>En brasse et en papillon, il doit toucher avec les deux mains simultanément.</li>
-                <li>En nage libre et en dos crawlé, un simple contact avec une main ou une partie du corps suffit.</li>
-              </ul>
-            </li>
-            <li>À l’arrivée, le chrono s’arrête dès que le nageur touche le mur. Là encore, les juges veillent au respect des règles spécifiques au style.</li>
-            <li>Après le départ et chaque virage, les nageurs peuvent parcourir une distance maximale de 15 mètres sous l’eau avant de refaire surface. 
-              Cela permet d’exploiter la puissance du départ ou du virage tout en respectant l’équilibre de la course.</li>
-            <li>Lors des relais, le nageur suivant ne peut plonger que lorsque son coéquipier touche le mur. Un départ trop tôt entraîne la disqualification 
-              de toute l’équipe, ce qui ajoute une pression énorme sur la coordination.</li>
-            <li>Les nageurs doivent porter une tenue réglementaire : maillots homologués par la Fédération Internationale de Natation (FINA), sans matériaux 
-              flottants ou motorisés. Les lunettes et bonnets sont autorisés, mais tout accessoire augmentant la performance est interdit.</li>
-          </ul>
-          </p>
-          <figure>
-            <img src="../media/discipline/images/apprendre-a-nager.png " alt="apprendre-a-nager">
-            <figcaption>Natateur-le Chevalier - Appareil pour apprendre a nager</figcaption>
-          </figure>
-          <figure>
-            <img src="../media/discipline/images/relais-4x500.png " alt="relais-4x500">
-            <figcaption>Relai 4x100 m JOs 2021 Tokyo</figcaption>
-          </figure>
-          <figure>
-            <img src="../media/discipline/images/leon.png " alt="leon">
-            <figcaption>Léon Marchand lors des JOs 2024 Paris</figcaption>
-          </figure>
-        </div>
+        <h4>Règles</h4>
+        <p>Les compétitions de natation aux Jeux Olympiques ne laissent aucune place à l’improvisation. Les règles sont strictes pour assurer l’équité et garantir la sécurité des athlètes.</p>
+              
+        <div class="discipline-bloc">
+              
+              <ul class="discipline-texte">
+                  <li>Lors des épreuves, les nageurs commencent sur un plot de départ. Au signal sonore, ils plongent dans l’eau. Un faux départ, c’est-à-dire un plongeon avant le signal, entraîne une disqualification immédiate. La précision et la concentration sont donc cruciales.</li>
+                  <li>Lors des épreuves, les nageurs doivent nager sous un style de nage prédefini. Un nageur qui ne respecte pas ces spécificités est immédiatement disqualifié.</li>
+            </ul>
+            <figure class="discipline-image">
+              <img src="../media/discipline/images/apprendre-a-nager.png" alt="apprendre-a-nager">
+              <figcaption>Natateur-le Chevalier - Appareil pour apprendre à nager</figcaption>
+            </figure>
+        </div>
+        <div class="discipline-bloc">
+          <ul class="discipline-texte">
+            <li>Aux virages, la manière dont un nageur touche le mur est surveillée de près :
+              <ul>
+                  <li>En brasse et en papillon, il doit toucher avec les deux mains simultanément.</li>
+                  <li>En nage libre et en dos crawlé, un simple contact avec une main ou une partie du corps suffit.</li>
+              </ul>
+            </li>
+          </ul>
+          <figure class="discipline-image">
+            <img src="../media/discipline/images/relais-4x500.png" alt="relais-4x500">
+            <figcaption>Relai 4x100 m JOs 2021 Tokyo</figcaption>
+          </figure>
+        </div>
+        <div class="discipline-bloc">
+          <ul class="discipline-texte">
+            <li>À l’arrivée, le chrono s’arrête dès que le nageur touche le mur. Là encore, les juges veillent au respect des règles spécifiques au style.</li>
+            <li>Après le départ et chaque virage, les nageurs peuvent parcourir une distance maximale de 15 mètres sous l’eau avant de refaire surface. Cela permet d’exploiter la puissance du départ ou du virage tout en respectant l’équilibre de la course.</li>
+            <li>Lors des relais, le nageur suivant ne peut plonger que lorsque son coéquipier touche le mur. Un départ trop tôt entraîne la disqualification de toute l’équipe, ce qui ajoute une pression énorme sur la coordination.</li>
+            <li>Les nageurs doivent porter une tenue réglementaire : maillots homologués par la Fédération Internationale de Natation (FINA), sans matériaux flottants ou motorisés. Les lunettes et bonnets sont autorisés, mais tout accessoire augmentant la performance est interdit.</li>  
+          </ul>
+            <figure class="discipline-image">
+                <img src="../media/discipline/images/leon.png" alt="leon">
+                <figcaption>Léon Marchand lors des JOs 2024 Paris</figcaption>
+            </figure>
+        </div>
       </section>
 
-      <section class="epreuves">
-        <h3>Épreuves de Natation JO 2024</h3>
-        <ul>
-          <li>50 m nage libre - femmes</li>
-          <li>50 m nage libre - hommes</li>
-          <li>100 m nage libre - femmes</li>
-          <li>100 m nage libre - hommes</li>
-          <li>50 m nage libre - femmes</li>
-          <li>50 m nage libre - hommes</li>
-          <li>200 m nage libre - femmes</li>
-          <li>200 m nage libre - hommes</li>
-          <li>400 m nage libre - femmes</li>
-          <li>400 m nage libre - hommes</li>
-          <li>800 m nage libre - femmes</li>
-          <li>800 m nage libre - hommes</li>
-          <li>1500 m nage libre - femmes</li>
-          <li>1500 m nage libre - hommes</li>
-          <li>100 m dos - femmes</li>
-          <li>100 m dos - hommes</li>
-          <li>200 m dos - femmes</li>
-          <li>200 m dos - hommes</li>
-          <li>100 m brasse - femmes</li>
-          <li>100 m brasse - hommes</li>
-          <li>200 m brasse - femmes</li>
-          <li>200 m brasse - hommes</li>
-          <li>100 m papillon - femmes</li>
-          <li>100 m papillon - hommes</li>
-          <li>200 m papillon - femmes</li>
-          <li>200 m papillon - hommes</li>
-          <li>200 m 4 nages - femmes</li>
-          <li>200 m 4 nages - hommes</li>
-          <li>400 m 4 nages - femmes</li>
-          <li>400 m 4 nages - hommes</li>
-          <li>Relais 4x100 m nage libre - femmes</li>
-          <li>Relais 4x100 m nage libre - hommes</li>
-          <li>Relais 4x200 m nage libre - femmes</li>
-          <li>Relais 4x200 m nage libre - hommes</li>
-          <li>Relais 4x100 m 4 nages - femmes</li>
-          <li>Relais 4x100 m 4 nages - hommes</li>
-          <li>Relais mixte 4x100 m 4 nages</li>
-      </ul>      
-      </section>
+<section class="discipline-epreuves">
+  <h3>Épreuves de Natation JO 2024</h3>
+  <div class="discipline-epreuves-container">
+      <article class="discipline-epreuves-list">
+          <ul>
+            <li><a href="">50 m nage libre - femmes</a></li>
+            <li><a href="">100 m nage libre - femmes</a></li>
+            <li><a href="">50 m nage libre - femmes</a></li>
+            <li><a href="">200 m nage libre - femmes</a></li>
+            <li><a href="">400 m nage libre - femmes</a></li>
+            <li><a href="">800 m nage libre - femmes</a></li>
+            <li><a href="">1500 m nage libre - femmes</a></li>
+            <li><a href="">100 m dos - femmes</a></li>
+            <li><a href="">200 m dos - femmes</a></li>
+            <li><a href="">100 m brasse - femmes</a></li>
+            <li><a href="">200 m brasse - femmes</a></li>
+            <li><a href="">100 m papillon - femmes</a></li>
+            <li><a href="">200 m papillon - femmes</a></li>
+            <li><a href="">200 m 4 nages - femmes</a></li>
+            <li><a href="page epreuve\index.html">400 m 4 nages - femmes</a></li>
+            <li><a href="">Relais 4x100 m nage libre - femmes</a></li>
+            <li><a href="">Relais 4x200 m nage libre - femmes</a></li>
+            <li><a href="">Relais 4x100 m 4 nages - femmes</a></li>
+            <li><a href="">Relais mixte 4x100 m 4 nages</a></li>
+          </ul>
+      </article>
+      <article class="discipline-epreuves-list">
+          <ul>
+              <li><a href="">50 m nage libre - hommes</a></li>
+              <li><a href="">100 m nage libre - hommes</a></li>
+              <li><a href="">50 m nage libre - hommes</a></li>
+              <li><a href="">200 m nage libre - hommes</a></li>
+              <li><a href="">400 m nage libre - hommes</a></li>
+              <li><a href="">800 m nage libre - hommes</a></li>
+              <li><a href="">1500 m nage libre - hommes</a></li>
+              <li><a href="">100 m dos - hommes</a></li>
+              <li><a href="">200 m dos - hommes</a></li>
+              <li><a href="">100 m brasse - hommes</a></li>
+              <li><a href="">200 m brasse - hommes</a></li>
+              <li><a href="">100 m papillon - hommes</a></li>
+              <li><a href="">200 m papillon - hommes</a></li>
+              <li><a href="">200 m 4 nages - hommes</a></li>
+              <li><a href="page epreuve\index.html">400 m 4 nages - hommes</a></li>
+              <li><a href="">Relais 4x100 m nage libre - hommes</a></li>
+              <li><a href="">Relais 4x200 m nage libre - hommes</a></li>
+              <li><a href="">Relais 4x100 m 4 nages - hommes</a></li>
+          </ul>
+      </article>
+  </div>
+</section>
+
+
 
       <section class="tableau-medailles">
         <h3>Tableau des Médailles</h3>
@@ -304,51 +326,45 @@
         
       </section>
     </main>
-
-    <footer class="footer">
-      <img src="../media/general/jo-paralimpiqueslogo.png" alt="Logo Paris 2024">
-      
-      <section class="social-section">
-        <h2>Suivez-nous sur :</h2>
-        <ul class="social-icons">
-          <li><img src="../media/general/twitter.png" alt="X"></li>
-          <li><img src="../media/general/instagram.png" alt="Instagram"></li>
-          <li><img src="../media/general/youtube.png" alt="YouTube"></li>
-          <li><img src="../media/general/facebook.png" alt="Facebook"></li>
-          <li><img src="../media/general/tiktok.png" alt="TikTok"></li>
-          <li><img src="../media/general/linkedin.png" alt="LinkedIn"></li>
-        </ul>
-      </section>
-      
-      <section class="footer">
-        <h2>Jeu Olympiques :</h2>
-        <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Champions</a></li>
-          <li><a href="#">Résultats</a></li>
-          <li><a href="#">Histoire</a></li>
-        </ul>
-      </section>
-      
-      <section class="footer">
-        <h2>Rendez-vous :</h2>
-        <ul>
-          <li><a href="#">Olympics.com</a></li>
-          <li><a href="#">Olympique channel</a></li>
-          <li><a href="#">La Boutique Olympique</a></li>
-          <li><a href="#">Musée Olympique</a></li>
-        </ul>
-      </section>
-      
-      <section>
-        <ul>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">Politique de confidentialité</a></li>
-          <li><a href="#">Conditions d'utilisation</a></li>
-          <li><a href="#">Politique de cookies</a></li>
-        </ul>
-      </section>
-    </footer>
+    <footer>
+      <img src="../media/accueil/images/LOGO After delay.png" alt="logo jeux Paralympiques" title="Jeux Paralympiques">
+      <article>
+        <p>suivez nous sur :</p>
+        <div id="social-icons">
+          <a><img src="../media/general/twitter.png" alt="X"></a>
+          <a><img src="../media/general/instagram.png" alt="Instagram"></a>
+          <a><img src="../media/general/youtube.png" alt="YouTube"></a>
+          <a><img src="../media/general/facebook.png" alt="Facebook"></a>
+          <a><img src="../media/general/tiktok.png" alt="TikTok"></a>
+          <a><img src="../media/general/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </article>
+      <article>
+        <p>Jeux Olympiques</p>
+        <ul>
+          <li><a href="">Accueil</a></li>
+          <li><a href="">Champions</a></li>
+          <li><a href="">Resultats</a></li>
+          <li><a href="">Histoire</a></li>
+        </ul>
+      </article>
+      <article>
+        <P>Rendez vous :</P>
+        <ul>
+          <li><a href="">Olympics.com</a></li>
+          <li><a href="">Olympiques channel</a></li>
+          <li><a href="">La boutique Olympique</a></li>
+          <li><a href="">Musée Olympique</a></li>
+        </ul>
+      </article>
+      <article>
+        <p>Mentions légales</p>
+        <ul>
+          <li><a href="">Poitique de confidentialité</a></li>
+          <li><a href="">Conditions d'utilisations</a></li>
+          <li><a href="">Politique de cookies</a></li>
+        </ul>
+      </article>
+    </footer>
   </body>
 </html>
-

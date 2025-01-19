@@ -1,100 +1,21 @@
-body{
-    background-color: #F0F2FC;
+body {
+    background-color: #000000;
     margin: 0;
 }
-/*--------------------------------------------             ACCUEIL                 -------------------------------------------------------------------*/
-main.accueil > img{
-    width: 50%;
-    border: solid 10px #0156A5;
-}
 
-main.accueil > img:nth-of-type(3){
-    border: solid 10px #8C97E9
-}
-
-main.accueil > img:nth-of-type(4){
-    border: solid 10px #5567EB
-}
-
-main.accueil{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section.accueil{
-    background-color: #2C2E7A;
+main section {
+    background-color: #ffffff;
     padding: 1em;
     margin: 2em 4em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     border-radius: 20px;
 }
 
-section.accueil:nth-of-type(2), section.accueil:nth-of-type(4){
-    display: flex;
-    flex-direction: column;
-}
-
-section.accueil:nth-of-type(4){
-    width: 50%;
-}
-
-section.accueil article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%
-}
-
-section.accueil p{
-    color: #F0F2FC;
-    font-size: 25px;
-    text-align: center;
-    font-family: "Roboto";
-}
-
-section.accueil a{
-    color: #F0F2FC;
-    text-decoration: none;
-}
-
-section.accueil a:hover{
-    text-decoration: underline;
-}
-
-
-section.accueil article img{
-    width: 100%;
-}
-
-
-section.accueil:last-of-type{
-    display: flex;
-    align-items: center;
-}
-
-section.accueil:last-of-type article{
-    width: 40%;
-}
-
-main.accueil h4{
-    display: flex;
-    padding: 2%;
-    align-items: center;
-    justify-content: center;
-    font-family: "league Spartan";
-    font-size: 25px;
-    background-color: #080A12;
-    color: #F0F2FC;
-    width: auto;
-
-    border-radius: 30px;
-}
-
-
-/*-----------------------------------HEADER--------------------------------------------------------*/
 header {
     position: sticky;
     top: 0%;
@@ -103,15 +24,13 @@ header {
     height: 6em;
     width: 100%;
     background-color: rgba(8, 10, 18, 0.5);
-    background-image: url(media/general/logo_JO.png);
+    background-image: url(media/accueil/images/logo_JO.png);
     background-repeat: no-repeat;
     background-position: right;
     z-index: 2;
 }
 
-
-
-header h2{
+header h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +38,7 @@ header h2{
     text-align: center;
     height: 1.5em;
     width: 10em;
-    color :aliceblue;
+    color: aliceblue;
     font-family: "league Spartan", serif;
     font-size: 2em;
     margin-left: 2em;
@@ -127,37 +46,32 @@ header h2{
     background-color: #080A12;
 }
 
-header img{
+header img {
     position: relative;
     margin-left: 1em;
 }
 
-/*-----------------------------------------------------COMMUN-----------------------------------------------------*/
-
-
-#imageacceuil{
-    top: 0;
+main > img:first-of-type {
     width: 100%;
     height: 100%;
     border: none;
 }
 
-h1{
+h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #080A12;
-    color :#F0F2FC;
+    color: #F0F2FC;
     font-size: 3em;
-    font-family: "league Spartan";
     margin: 0 43%;
     height: 2em;
-    width: auto;
-    padding: 0 1em;
+    width: 20%;
+    margin-top: 1em;
     border-radius: 30px;
 }
 
-h3{
+h3 {
     display: flex;
     align-items: center;
     font-family: "league spartan", arial;
@@ -167,79 +81,13 @@ h3{
     height: 5em;
     width: 70%;
     padding-left: 20px;
-    background-image: url(media/general/logo_JO.png);
+    background-image: url(media/accueil/images/logo_JO.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 5em;
     border-radius: 20px;
+    margin-bottom: 10px; 
 }
-
-.side-menu {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 10%;
-    z-index: 2;
-}
-
-.side-menu a {
-    margin-top: 10px;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.side-menu img{
-    position: absolute;
-    top: 5%;
-    width: 50%;
-}
-
-.side-menu a:hover {
-    background-color: #575757;
-}
-
-.side-menu .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    text-decoration: none;
-    color: white;
-}
-
-.main-content {
-    padding: 20px;
-}
-
-.open-btn {
-    width: 4em;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 1;
-}
-
-/*--------------------------------------------             DISCIPLINE                -------------------------------------------------------------------*/
-
 /*                                          section histoire*/
 .discipline-histoire {
     display: flex;
@@ -379,6 +227,8 @@ h3{
     font-weight: bold; 
 }
 
+
+
 /*--------------------------------------------tableaux----------------------------------------------*/
 table {
     width: 100%;
@@ -388,7 +238,7 @@ table {
     text-align: left;
 }
 
-td{
+td {
     background-color: #F0F2FC;
 }
 
@@ -423,10 +273,10 @@ table caption {
 footer {
     background-color: #151a30;
     color: #fff;
-    padding: 20px 3%;
+    padding: 20px 5px;
     display: flex;  
-    flex-wrap: nowrap; 
-    text-align: center;
+    flex-wrap: wrap; 
+    text-align: left;
 }
 
 footer>img:first-of-type {
@@ -434,26 +284,22 @@ footer>img:first-of-type {
     height: 11em;
 }
 
-
 footer ul li {
     list-style: none;
-    text-align: left;
-    margin-top: 10px;
 }
 
 footer ul li a {
     text-decoration: none; 
     color: white; 
-    font-size: 15px;
-
+    font-size: 14px; 
 }
 
-footer ul li img{
+footer ul li img {
     width: 2em;
     margin: 0 5px;
 }
 
-#social-icons{
+#social-icons {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     justify-content: center;
@@ -461,17 +307,12 @@ footer ul li img{
     align-items: center; 
 }
 
-footer article{
-
-    width: 20%;
+footer article {
     margin: 0 3%;
     padding-left: 3%;
     border-left: solid 1px #F0F2FC;
 }
-
 /*--------------------------------------------------------------------------------------------------*/
-
-/*--------------------------------                Adaptation téléphone                        -----------------------------------------------------------------*/
 
 @media (max-width: 1068px) {
     body {
