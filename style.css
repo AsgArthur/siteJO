@@ -227,6 +227,13 @@ h3{
     transition: transform 0.2s ease;
 }
 
+main section {
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 2em 4em;
+    border-radius: 20px;
+}
+
 .overlay {
     position: fixed;
     top: 0;
