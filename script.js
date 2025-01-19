@@ -1,5 +1,5 @@
 function openMenu() {
-    document.getElementById("sideMenu").style.width = "20%";
+    document.getElementById("sideMenu").style.width = "25%";
     document.getElementById("overlay").style.display = "block"; // Affiche l'overlay
 }
 

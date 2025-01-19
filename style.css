@@ -94,6 +94,7 @@ main.accueil h4{
 }
 
 
+
 /*-----------------------------------HEADER--------------------------------------------------------*/
 header {
     position: sticky;
@@ -245,6 +246,104 @@ main section {
     z-index: 1;
 }
 
+
+
+/*--------------------------------------------tableaux----------------------------------------------*/
+table {
+    width: 100%;
+    border-spacing: 2px;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+td{
+    background-color: #F0F2FC;
+}
+
+thead {
+    background-color: #080A12; 
+    color: white;
+    font-weight: bold;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody td, thead th {
+    padding: 10px; 
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+table caption {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2C2E7A;
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------footer----------------------------------------------*/
+footer {
+    background-color: #151a30;
+    color: #fff;
+    padding: 20px 3%;
+    display: flex;  
+    flex-wrap: nowrap; 
+    text-align: center;
+}
+
+footer>img:first-of-type {
+    width: 10em;
+    height: 11em;
+}
+
+
+footer ul li {
+    list-style: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+footer ul li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 15px;
+
+}
+
+footer ul li img{
+    width: 2em;
+    margin: 0 5px;
+}
+
+#social-icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: center;
+    gap: 10px;
+    align-items: center; 
+}
+
+footer article{
+
+    width: 20%;
+    margin: 0 3%;
+    padding-left: 3%;
+    border-left: solid 1px #F0F2FC;
+}
+
+footer article img{
+    size: 2%;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
 /*--------------------------------------------             DISCIPLINE                -------------------------------------------------------------------*/
 
 /*                                          section histoire*/
@@ -387,118 +486,98 @@ main section {
     font-weight: bold; 
 }
 
-/*--------------------------------------------tableaux----------------------------------------------*/
-table {
-    width: 100%;
-    border-spacing: 2px;
-    margin: 20px 0;
-    font-size: 18px;
-    text-align: left;
-}
-
-td{
-    background-color: #F0F2FC;
-}
-
-thead {
-    background-color: #080A12; 
-    color: white;
-    font-weight: bold;
-}
-
-thead th {
-    padding: 10px;
-}
-
-tbody td, thead th {
-    padding: 10px; 
-    text-align: center;
-}
-
-td {
-    text-align: center;
-}
-
-table caption {
-    margin: 10px 0;
-    font-size: 20px;
-    font-weight: bold;
-    color: #2C2E7A;
-}
-/*--------------------------------------------------------------------------------------------------*/
-
-/*--------------------------------------------footer----------------------------------------------*/
-footer {
-    background-color: #151a30;
-    color: #fff;
-    padding: 20px 3%;
-    display: flex;  
-    flex-wrap: nowrap; 
-    text-align: center;
-}
-
-footer>img:first-of-type {
-    width: 10em;
-    height: 11em;
-}
-
-
-footer ul li {
-    list-style: none;
-    text-align: left;
-    margin-top: 10px;
-}
-
-footer ul li a {
-    text-decoration: none; 
-    color: white; 
-    font-size: 15px;
-
-}
-
-footer ul li img{
-    width: 2em;
-    margin: 0 5px;
-}
-
-#social-icons{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    justify-content: center;
-    gap: 10px;
-    align-items: center; 
-}
-
-footer article{
-
-    width: 20%;
-    margin: 0 3%;
-    padding-left: 3%;
-    border-left: solid 1px #F0F2FC;
-}
-
-/*--------------------------------------------------------------------------------------------------*/
-
 /*--------------------------------                Adaptation téléphone                        -----------------------------------------------------------------*/
 
-@media (max-width: 1068px) {
-    body {
-        margin: 0;
-    }
-
-    header h2 {
-        font-size: 1.5em;
-        width: auto;
-        margin-left: 1em;
-    }
-
+/*---------------------------------------------      ACCUEIL       -----------------------------------------------------------------------*/
+@media (max-width: 768px) {
     header {
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1em;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+  
+    section.accueil {
+      flex-direction: column;
+      margin: 1em; /* Réduire les marges */
+      padding: 1em;
+    }
+  
+    section.accueil article {
+      width: 100%; 
+      margin-bottom: 1em;
+    }
+  
+    section.accueil:nth-of-type(4) {
+      width: 100%;
+    }
+  
+    table {
+      font-size: 14px;
+      overflow-x: auto; 
+    }
+  
+    table caption {
+      font-size: 16px;
+    }
+  
+    #social-icons {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+    }
+  
+    h1, h2, h3, h4 {
+      font-size: 1.5em;
     }
 
+    .side-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 15%;
+        z-index: 2;
+    }
+
+    .side-menu .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        font-size: 36px;
+        margin-left: 50px;
+        text-decoration: none;
+        color: white;
+    }
+    .open-btn {
+        width: 3em;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .side-menu img{
+        position: absolute;
+        top: 2%;
+        width: 50%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer article{
+        border: none;
+    }
+  }
+
+/*--------------------------------------      Discipline        -----------------------------------------------------*/
+
+@media (max-width: 768px) {
     main {
         margin: 0;
         padding: 0;
@@ -589,20 +668,5 @@ footer article{
 
     tbody td, thead th {
         padding: 5px;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center; 
-    }
-
-    footer article {
-        margin: 1em 0;
-        border-left: none; 
-        padding: 0;
-    }
-
-    footer #social-icons {
-        grid-template-columns: repeat(2, 1fr); 
     }
 }
