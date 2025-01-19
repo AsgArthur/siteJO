@@ -12,10 +12,20 @@
 <body>
     <header>
         <nav>
-            <img src="../media/epreuve/images/menu.png" alt="image_menu">
+          <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+          <div id="sideMenu" class="side-menu">
+            <img src="../media/general/logo_JO.png" alt="logo des JO">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+            <a href="../page accueil/index.html">Accueil</a>
+            <a href="../page discipline/index.html">Discipline</a>
+            <a href="../page epreuve/index.html">Épreuves</a>
+            <a href="../page sportif/index.html">Sportifs</a>
+          </div>
+          <img src="../media/general/menu.png" alt="Menu" class="open-btn" onclick="openMenu()">      
         </nav>
         <h2>Jeux Olympiques</h2>
-    </header>
+        <script src="../script.js"></script>
+      </header>
     <main class="epreuve">
         <img src="../media/epreuve/images/imageNavEpreuve(1).png" alt="Image d'un nageur sous l'eau ">
         <section class="section1">
