@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Page d'épreuve</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Accueil - JO</title>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+    </head>
 <body>
     <header>
         <nav>
-            <a href=""></a>
+            <img src="../media/epreuve/images/menu.png" alt="image_menu">
         </nav>
         <h2>Jeux Olympiques</h2>
-
     </header>
     <main>
-        <figure>
-            <img src="" alt="Image d'un nageur sous l'eau ">
-        </figure>
-        <section>
+        <img src="../media/epreuve/images/imageNavEpreuve(1).png" alt="Image d'un nageur sous l'eau ">
+        <section class="section1">
             <h3>Présentation et Information Générales</h3>
-            <article>
+            <article class="presentation">
                 <p>
                     <strong> Le 400m - 4 Nages : Une Épreuve de Polyvalence et d’Endurance</strong>
                     <br><br>
@@ -30,7 +31,7 @@
                     devenue un symbole d’excellence pour les nageurs les plus complets.
                 </p>
             </article>
-            <article>
+            <article class="deroulement">
                 <p>
                     <strong>Déroulement de l’épreuve</strong>
                     <br><br>
@@ -47,7 +48,7 @@
                     Généralement, les nageurs optent pour le crawl, qui est le plus rapide et conclut la course avec une accélération finale.
                 </p>
             </article>
-            <article>
+            <article class="regles">
                 <strong>Les règles principales du 400m - 4 nages</strong>
                 <p>
                     Pour garantir une compétition équitable, les règles suivantes doivent être respectées : <br><br>
@@ -76,144 +77,264 @@
                 </p>
             </article>
             <figure>
-                <img src="" alt="Départ des plongeoirs">
+                <img src="../media/epreuve/images/imagePresentation(1)(1).png" alt="Départ des plongeoirs">
             </figure>
         </section>
         <h3>Natation - Résultats</h3>
-        <section>
-            <!-- Tableau 1 -->
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2">28/07/2024</th>
-                        <th>10h15</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="3">400m - 4 nages individuel - hommes - séries</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="section2">
+            <div class="tableau">
+                <!-- Tableau 1 -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">28/07/2024</th>
+                            <th>10h15</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">400m - 4 nages individuel - hommes - séries</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <!-- Tableau 2 -->
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2">28/07/2024</th>
-                        <th>19h30</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="3">400m - 4 nages individuel - hommes - finale</td>
-                    </tr>
-                    <tr>
-                        <td>Léon MARCHAND</td>
-                        <td>Tomoyuki MATSUSHITA</td>
-                        <td>Carson FOSTER</td>
-                    </tr>
-                </tbody>
-            </table>
+                <!-- Tableau 2 -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">28/07/2024</th>
+                            <th>19h30</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">400m - 4 nages individuel - hommes - finale</td>
+                        </tr>
+                        <tr>
+                            <td>Léon MARCHAND</td>
+                            <td>Tomoyuki MATSUSHITA</td>
+                            <td>Carson FOSTER</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <!-- Tableau 3 -->
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="5">Série 1</th>
-                    </tr>
-                    <tr>
-                        <th>Rang</th>
-                        <th>Athlètes</th>
-                        <th>Pays</th>
-                        <th>Temps</th>
-                        <th>Qualification</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Carson Foster</td>
-                        <td>États-Unis</td>
-                        <td>4:11.07</td>
-                        <td>Oui</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Tomoyuki Matsushita</td>
-                        <td>Japon</td>
-                        <td>4:11.18</td>
-                        <td>Oui</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Alberto Razzetti</td>
-                        <td>Italie</td>
-                        <td>4:11.52</td>
-                        <td>Non</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Zhang Zhanshuo</td>
-                        <td>Chine</td>
-                        <td>4:12.72</td>
-                        <td>Non</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Chase Kalisz</td>
-                        <td>États-Unis</td>
-                        <td>4:13.36</td>
-                        <td>Non</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>William Petric</td>
-                        <td>Australie</td>
-                        <td>4:13.58</td>
-                        <td>Non</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Gábor Zombori</td>
-                        <td>Hongrie</td>
-                        <td>4:14.88</td>
-                        <td>Non</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Apostolos Papastamos</td>
-                        <td>Grèce</td>
-                        <td>4:15.32</td>
-                        <td>Non</td>
-                    </tr>
-                </tbody>
-            </table>
-            
+                <!-- Tableau 3 -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="5">Série 1</th>
+                        </tr>
+                        <tr>
+                            <th>Rang</th>
+                            <th>Athlètes</th>
+                            <th>Pays</th>
+                            <th>Temps</th>
+                            <th>Qualification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Carson Foster</td>
+                            <td>États-Unis</td>
+                            <td>4:11.07</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Tomoyuki Matsushita</td>
+                            <td>Japon</td>
+                            <td>4:11.18</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Alberto Razzetti</td>
+                            <td>Italie</td>
+                            <td>4:11.52</td>
+                            <td>Non</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Zhang Zhanshuo</td>
+                            <td>Chine</td>
+                            <td>4:12.72</td>
+                            <td>Non</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Chase Kalisz</td>
+                            <td>États-Unis</td>
+                            <td>4:13.36</td>
+                            <td>Non</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>William Petric</td>
+                            <td>Australie</td>
+                            <td>4:13.58</td>
+                            <td>Non</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Gábor Zombori</td>
+                            <td>Hongrie</td>
+                            <td>4:14.88</td>
+                            <td>Non</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Apostolos Papastamos</td>
+                            <td>Grèce</td>
+                            <td>4:15.32</td>
+                            <td>Non</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Tableau 4 -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="5">Série 2</th>
+                        </tr>
+                        <tr>
+                            <th>Rang</th>
+                            <th>Athlète</th>
+                            <th>Pays</th>
+                            <th>Temps</th>
+                            <th>Qualification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Léon Marchand</td>
+                            <td>France</td>
+                            <td>4:08.30</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Max Litchfield</td>
+                            <td>Grande-Bretagne</td>
+                            <td>4:09.51</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Daiya Seto</td>
+                            <td>Japon</td>
+                            <td>4:10.92</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Cedric Büssing</td>
+                            <td>Allemagne</td>
+                            <td>4:11.52</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Lewis Clareburt</td>
+                            <td>Nouvelle-Zélande</td>
+                            <td>4:11.52</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Balázs Holló</td>
+                            <td>Hongrie</td>
+                            <td>4:12.20</td>
+                            <td>Non</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Brendon Smith</td>
+                            <td>Australie</td>
+                            <td>4:14.36</td>
+                            <td>Non</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Tristan Jankovics</td>
+                            <td>Canada</td>
+                            <td>4:18.23</td>
+                            <td>Non</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <img src="../media/epreuve/images/Rectangle24.png" alt="Image de Léon Marchand">         
         </section>
-        <h1>Médias et Moments forts</h1>
-        <section>
-            <article>
-                <figure>
-                    <img src="" alt="Léon Marchand se préparant">
-                    <figcaption>
-                        <strong>Finale 400m 4 nages (H) | Natation | Jeux Olympiques de Paris 2024</strong><br>
-                        La finale masculine du 400m 4 nages s'est déroulée le 28/07/2024 à Paris La Défense Arena. Léon Marchand (FRA) a remporté la médaille d’or, 
-                        Tomoyuki Matsushita (JPN) celle d’argent et Carson Foster (USA) celle de bronze.
-                    </figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="" alt="Léon Marchand battant un record">
-                    <figcaption>
-                        <strong>Finale 400m 4 nages (H) | Natation | Jeux Olympiques de Paris 2024</strong><br>
-                        Durant la finale, Léon Marchand a battu l’ancien record olympique de Michael Phelps qui était de 4:03.84 en effectuant un temps incroyable de 4:02.95.
-                    </figcaption>
-                </figure>
-            </article>
-        </section>
+        <div class="moment-fort">
+            <h1>Médias et Moments forts</h1>
+            <section class="section3">
+                <article class="article1">
+                    <figure>
+                        <img src="../media/epreuve/images/image34.png" alt="Image de Léon Marchand lorsqu'il a remporte le 400m - 4 nages">
+                        <figcaption>
+                            <strong>Finale 400m 4 nages (H) | Natation | Jeux Olympiques de Paris 2024</strong><br>
+                            La finale masculine du 400m 4 nages s'est déroulée le 28/07/2024 à Paris La Défense Arena. Léon Marchand (FRA) a remporté la médaille d’or, 
+                            Tomoyuki Matsushita (JPN) celle d’argent et Carson Foster (USA) celle de bronze.
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="article2">
+                    <figure>
+                        <iframe width="460" height="300" src="https://www.youtube.com/embed/Tdx1OR4kgpg?si=fRMqj4f0UGSg9IHW" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>                            
+                        <figcaption>
+                            <strong>Finale 400m 4 nages (H) | Natation | Jeux Olympiques de Paris 2024</strong><br>
+                            Durant la finale, Léon Marchand a battu l’ancien record olympique de Michael Phelps qui était de 4:03.84 en effectuant un temps incroyable de 4:02.95.
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+        </div>
     </main>
     <footer>
-    </footer>
+        <img src="../media/accueil/images/LOGO After delay.png" alt="logo jeux Paralympiques" title="Jeux Paralympiques">
+        <article>
+          <p>suivez nous sur :</p>
+          <div id="social-icons">
+            <a><img src="../media/general/twitter.png" alt="X"></a>
+            <a><img src="../media/general/instagram.png" alt="Instagram"></a>
+            <a><img src="../media/general/youtube.png" alt="YouTube"></a>
+            <a><img src="../media/general/facebook.png" alt="Facebook"></a>
+            <a><img src="../media/general/tiktok.png" alt="TikTok"></a>
+            <a><img src="../media/general/linkedin.png" alt="LinkedIn"></a>
+          </div>
+        </article>
+        <article>
+          <p>Jeux Olympiques</p>
+          <ul>
+            <li>accueil</li>
+            <li>Champions</li>
+            <li>Resultats</li>
+            <li>histoire</li>
+          </ul>
+        </article>
+        <article>
+          <P>rendez vous :</P>
+          <ul>
+            <li>Olympics.com</li>
+            <li>Olympiques channel</li>
+            <li>La boutique Olympique</li>
+            <li>Musée Olympique</li>
+          </ul>
+        </article>
+        <article>
+          <p>mentions légales</p>
+          <ul>
+            <li>politique de confidentialité</li>
+            <li>Conditions d'utilisations</li>
+            <li>Politique de cookies</li>
+          </ul>
+        </article>
+      </footer>
 </html>
